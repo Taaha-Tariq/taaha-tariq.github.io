@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  background-color: rgba(57, 222, 230, 0.999);
+}
+
+body {
+  font-family: sans-serif;
+  height: 690px;
+  background: linear-gradient(rgb(0, 0, 0) 50%, rgba(57, 222, 230, 0.999));
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+}
+
+.page {
+  height: 635px;
+  margin: 40px;
+  border-radius: 35px;
+  z-index: 1;
+  color: white;
+  background-color: white;
+}
+
+.backscreen {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.89);
+  border-radius: 33px;
+}
+
+.header {
+  display: flex;
+  height: 15%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav {
+  width: 40%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+li {
+  margin: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  color: rgba(57, 222, 230, 0.999);
+}
+
+main {
+  height: 85%;
+  display: flex;
+}
+
+.About-me {
+  height: 70%;
+  width: 80%;
+  float: right;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+span {
+  color:rgba(57, 222, 230, 0.999);
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.About-me p {
+  max-width: 430px;
+  font-size: 0.95rem;
+}
+
+.top {
+  margin-top: 100px;
+}
+
+main .info {
+  width: 60%;
+}
+
+.icons {
+  display: flex;
+  width: 80%;
+  float: right;
+  margin-top: -75px;
+  margin-right: 30px;
+}
+
+img {
+  margin: 30px;
+  border: 0.5px solid rgba(57, 222, 230, 0.999);
+  border-radius: 15px;
+}
+
+.button-cnt a{
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  width: 130px;
+  height: 30px;
+  background-color: rgba(37, 184, 192, 0.999);
+  border-radius: 7px;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 4px;
+}
+
+.button-cnt {
+  width: 80%;
+  float: right;
+}
+
+.button:hover {
+  background-color: rgba(57, 222, 230, 0.999);
+  cursor: pointer;
+}
+
+.img {
+  width: 40%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+.img-cnt {
+  width: 80%;
+  min-width: 430px;
+  height: 80%;
+  background-image: url(../images/b9e2e2c8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.img-cnt:hover {
+  cursor: pointer;
+}
+
+img[src*='github.png'], img[src*='discord.png'] {
+  background-color: white;
+}
+
+@media only screen and (max-width: 1268px) and (min-width: 967px) {
+  main .info {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .img {
+    width: 55%
+  }
+
+  .img-cnt {
+    min-width: 200px;
+    height: 65%;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 967px) {
+  .icons {
+     padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 871px) and (min-width: 845px) {
+  img {
+    margin-top: -1px;
+  }
+}
+
+@media only screen and (max-width: 871px) {
+  .img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 716px) {
+  h1{
+    font-size: 1.7rem;
+  }
+
+  main {
+    height: 75%;
+    margin-top: 20px;
+  }
+
+  main .info {
+    margin-top: -50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .About-me {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -70px;
+  }
+
+  .button-cnt {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px
+  }
+
+  .icons {
+    justify-content: space-around;
+    margin: -10px auto;
+  }
+
+  .About-me p{
+    max-width: 500px;
+    width: 100%;
+  }
+  .header h1 {
+    margin-left: 55px;
+  }
+
+  img {
+    height: 25px
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  a, h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header h1 {
+    margin: 0 0 10px 0;
+    padding-top: 40px;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  li {
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 503px) {
+  .home {
+    margin-right: -5px;
+  }
+
+  .contact {
+    margin-left: -5px;
+  }
+
+
+  .icons img {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .icons {
+    margin-top: 25px;
+  }
+
+  li a {
+    font-size: 1.05rem;
+  }
+}
+
+@media only screen and (max-width: 349px) {
+  .icons {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+
+
