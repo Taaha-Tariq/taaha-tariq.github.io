@@ -40,6 +40,11 @@ body {
   justify-content: space-around;
 }
 
+.title-div {
+  display: flex;
+  align-items: center;
+}
+
 nav {
   width: 40%;
   display: flex;
@@ -107,7 +112,7 @@ main .info {
   margin-right: 30px;
 }
 
-img {
+.icons img {
   margin: 30px;
   border: 0.5px solid rgba(57, 222, 230, 0.999);
   border-radius: 15px;
@@ -131,6 +136,39 @@ img {
 .button-cnt {
   width: 80%;
   float: right;
+}
+
+.bulb {
+  height: 50px;
+  margin-left: 9px;
+  position: relative;
+  animation: 4s ease-in-out infinite moving;
+}
+
+.bulb:hover {
+  cursor: pointer;
+}
+
+@keyframes moving {
+  0% {
+    left: 5px;
+  }
+
+  25% {
+    rotate: 1 1 0 360deg;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  75% {
+    rotate: 0 1 0 360deg;
+  }
+
+  100% {
+    bottom: 0px;
+  }
 }
 
 .button:hover {
@@ -159,10 +197,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
-}
-
-.img-cnt:hover {
-  cursor: pointer;
 }
 
 img[src*='github.png'], img[src*='discord.png'] {
@@ -222,7 +256,6 @@ img[src*='github.png'], img[src*='discord.png'] {
   }
 
   main .info {
-    margin-top: -50px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -273,6 +306,10 @@ img[src*='github.png'], img[src*='discord.png'] {
     padding-top: 40px;
   }
 
+  .bulb {
+    margin-top: 30px;
+  }
+
   .header {
     flex-direction: column;
     justify-content: center;
@@ -289,39 +326,49 @@ img[src*='github.png'], img[src*='discord.png'] {
 }
 
 @media only screen and (max-width: 503px) {
-  .home {
-    margin-right: -5px;
+
+  .About-me p {
+    margin: 10px 0 10px 0;
   }
 
-  .contact {
-    margin-left: -5px;
+  .button {
+    margin-top: 50px;
   }
 
+  .page {
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+  }
+  
+  .icons {
+    width: 20px;
+    bottom: 40px;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+  }
 
   .icons img {
-    margin-right: -10px;
-    margin-left: -10px;
-    margin-top: 40px;
-  }
-
-}
-
-@media only screen and (max-width: 400px) {
-  .icons {
-    margin-top: 25px;
-  }
-
-  li a {
-    font-size: 1.05rem;
+    margin: 4px;
   }
 }
 
-@media only screen and (max-width: 349px) {
-  .icons {
-    margin-top: 40px;
+@media only screen and (max-width: 414px) {
+  .button {
+    margin-top: 70px;
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .button {
+    margin-top: 90px;
+  }
+
+  nav li a {
+    margin: 0 -10px 0 -10px;
+  }
+}
 
 
 

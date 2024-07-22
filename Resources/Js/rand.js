@@ -1,4 +1,4 @@
-const targetElement = document.querySelector('.img-cnt');
+const targetElement = document.querySelector('.bulb');
 const heading = document.querySelector('.title');
 const button = document.querySelector('.button');
 const span = document.querySelector('span');
@@ -29,7 +29,7 @@ function changeColor () {
                 list[i].style.color = 'white';
         })
         }
-        for (let i = 0; i < img.length; i++) {
+        for (let i = 1; i < img.length; i++) {
             img[i].style.border = `1px solid rgb(${num1}, ${num2}, ${num3}`
         }
         button.addEventListener('mouseover', function () {
@@ -43,7 +43,7 @@ function changeColor () {
 
 targetElement.addEventListener('click', changeColor);
 
-heading.addEventListener('mouseover', function () {
+button.addEventListener('click', function () {
     heading.style.color = 'white';
     body.style.backgroundImage = 'linear-gradient(rgb(0, 0, 0) 50%, rgba(57, 222, 230, 0.999))';
     span.style.color = 'rgba(57, 222, 230, 0.999)';
@@ -54,7 +54,7 @@ heading.addEventListener('mouseover', function () {
             list[i].style.color = 'rgba(57, 222, 230, 0.999)'
         })
     }
-    for (let i = 0; i < img.length; i++) {
+    for (let i = 1; i < img.length; i++) {
         img[i].style.border = '1px solid rgba(57, 222, 230, 0.999)'
     }
     button.addEventListener('mouseover', function () {
