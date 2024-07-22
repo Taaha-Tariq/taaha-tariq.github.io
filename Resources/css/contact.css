@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    margin-top: 80px;
+    height: 630px;
+    background-image: url('../images/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.backscreen {
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    width: 40%;
+}
+
+nav ul {
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    font-size: 1.4rem;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    color: rgba(57, 222, 230, 0.999);
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+.info {
+    height: 100%;
+    border: 1px solid;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 1.1rem;
+}
+
+.backscreen-2 {
+    height: 400px;
+    border: 1px solid;
+    width: 40%;
+    border-radius: 10px;
+    background-color: white;
+    margin: 200px 0 0 100px;
+}
+
+h1, strong {
+    color: rgba(57, 222, 230, 0.999);
+    border-bottom: 1px solid;
+    margin-right: 5px;
+}
+
+.email {
+    display: flex;
+}
+
+.icons img {
+    background-color: white;
+    border-radius: 20px;
+    border: 0.5px solid rgba(57, 222, 230, 0.999);
+}
+
+.email img {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .backscreen-2 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .backscreen-2 {
+        margin: 200px auto;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    html {
+        font-size: 14px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .backscreen-2 {
+        height: 450px;
+        width: 92%
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+    
+    nav ul a {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    nav ul a {
+        margin: 10px;
+    }
+}
+

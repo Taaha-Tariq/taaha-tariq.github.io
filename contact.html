@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Information</title>
+        <link href="./Resources/css/contact.css"rel="stylesheet">
+    </head>
+    <body>
+        <div class="backscreen">
+        <header>
+            <img src="./Resources/images/contact-us_3192900.png"alt=""
+            style="height: 60px; margin-left:40px">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav> 
+        </header>
+        </div>
+        <main>
+            <div class="backscreen-2">
+            <div class="info">
+                <h1>Contact</h1>
+                <p>I am actively seeking opportunities to collaborate on web projects and participate in hackathons. Please feel free to reach out to me through any of the following channels.</p>
+                <div class="email">
+                    <p><strong>Email:</strong> 
+                    <div id="cpytext">taahatariq2005@gmail.com</div></p> 
+                    <img src="./Resources/images/copy-file.png"alt=""height="20px" onclick="copyText()" title="Copy">
+                </div>  
+                <div class="icons" role="presentation">
+                    <a><img src="./Resources/images/discord.png" alt=""height="23"></a>
+                    <a href="https://github.com/Taaha-Tariq" target="_blank"><img src="./Resources/images/github.png" alt=""height="23"></a>
+                    <a href="https://www.instagram.com/taahatariq/" target="_blank"><img src="./Resources/images/social.png" alt=""height="23"></a>
+                    <a href="https://www.linkedin.com/in/muhammd-taaha-tariq?original_referer=https%3A%2F%2Fgithub.com%2FTaaha-Tariq" target="_blank"><img src="./Resources/images/social1.png" alt=""height="23"></a>
+                </div>          
+                <p>I am eager to engage with like-minded individuals and teams to innovate and create impactful solutions in the realm of technology. Looking forward to connecting and exploring possibilities together.</p>
+            </div>
+            </div>
+        </main>
+        <script>
+            function copyText() {
+  var divElement = document.getElementById("cpytext");
+
+  var range = document.createRange();
+
+  range.selectNode(divElement);
+
+  window.getSelection().addRange(range);
+
+  document.execCommand("copy");
+
+  alert("Text has been copied!");
+}
+            </script>
+    </body>
+</html>
