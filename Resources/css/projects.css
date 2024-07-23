@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: fit-content;
+    color: white;
+    background: linear-gradient(black , rgba(57, 222, 230, 0.999));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  nav::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.89);      
+  }
+  
+  nav::-webkit-scrollbar-thumb {
+    background-color: rgba(57, 222, 230, 0.999);    
+    border: 3px solid rgba(17, 155, 160, 0.999);   
+  }
+
+.backscreen {
+    width: 95%;
+    border-radius: 30px;
+    height: 80%;
+    margin: 40px auto;
+    background-color: white;
+}
+
+.backscreen-2 {
+    background-color: rgba(0, 0, 0, 0.89);
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 80px;
+    position: sticky;
+    border-bottom: 1px solid;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+
+.header {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    border-bottom: 1px solid;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.89);
+    z-index: 1;
+}
+
+.title {
+    margin-left: 50px;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header nav {
+    width: 40%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+header nav ul a {
+    margin: 40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+main nav {
+    height: 130px;
+    width: 300px;
+    overflow-y: scroll;
+    position: sticky;
+    top: 80px;
+    background-color: black;
+    z-index: 1;
+}
+
+main nav ul {
+    list-style-type: circle;
+    margin: 10px 20px;
+    font-size: 1.2rem;
+}
+
+main nav ul li {
+    margin: 20px;
+}
+
+main nav ul a {
+    text-decoration: underline;
+    color: white;
+}
+
+nav a:hover {
+    color: rgba(57, 222, 230, 0.999);
+}
+
+section a {
+    color: white;
+    text-decoration: none;
+}
+
+.web-dev, .js-projects, .c-projects, .skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: -30px;
+}
+
+.space {
+    height: 40px;
+}
+
+h2 {
+    margin: 40px 0;
+    border-bottom: 1px solid white;
+    font-size: 1.9rem;
+}
+
+.projects {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px;
+    grid-auto-flow: row;
+    grid-auto-rows: 400px;
+    gap: 70px;
+}
+
+.project-n {
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 5px rgba(17, 155, 160, 0.999);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project-n:hover {
+    bottom: 5px;
+    box-shadow: 5px 7px rgba(57, 222, 230, 0.999);
+}
+
+.img-cnt {
+    height: 60%;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.button {
+    width: 50%;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgba(17, 155, 160, 0.999);
+    text-align: center;
+    padding: 5px;
+}
+
+.img-cnt img {
+    height: 100%;
+    width: 100%;
+} 
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(57, 222, 230, 0.999);
+}
+
+.icons {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    margin: 0 20px 20px 20px; 
+}
+
+@media only screen and (max-width: 970px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+    
+    header ul li a {
+        margin-left: 0;
+    }
+
+    main nav {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        height: 100px;
+    }
+
+    .space {
+        height: 55px;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header nav {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    header nav ul {
+        justify-content: space-around;
+    }
+
+    main nav {
+        top: 100px;
+    }
+
+    .title {
+        margin: 0;
+    }
+
+    header nav ul a {
+        text-decoration: underline;
+        margin: 0;
+    }
+    
+    .projects {
+        gap: 25px
+    }
+
+    .icons img {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .icons img {
+        height: 30px;
+        margin: 10px;
+    }
+}
+
