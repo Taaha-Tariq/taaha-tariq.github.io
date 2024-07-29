@@ -44,6 +44,7 @@ function changeColor () {
 targetElement.addEventListener('click', changeColor);
 
 button.addEventListener('click', function () {
+
     heading.style.color = 'white';
     body.style.backgroundImage = 'linear-gradient(rgb(0, 0, 0) 50%, rgba(57, 222, 230, 0.999))';
     span.style.color = 'rgba(57, 222, 230, 0.999)';

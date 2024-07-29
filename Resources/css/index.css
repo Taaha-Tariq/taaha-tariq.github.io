@@ -25,6 +25,23 @@ body {
   z-index: 1;
   color: white;
   background-color: white;
+  /* The animation changes*/
+  animation: dropdown 5s ease-in-out 1;
+  position: relative;
+}
+
+@keyframes dropdown {
+    0% {
+      bottom: 1000px;
+    }
+
+    25% {
+      bottom: 0px;
+    }
+    100% {
+      rotate: 1 0 1 360deg;
+    }
+    
 }
 
 .backscreen {
