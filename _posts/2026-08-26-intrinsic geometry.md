@@ -85,7 +85,7 @@ In simple terms, the definition ensures that the parametrization is smooth, that
 # Theorema Egregium
 To proceed, we can make use of our definition of a regular surface along with the additional condition of orientability (to ensure a globally consistent choice of normal direction). This allows us to associate a compatible trihedron(not necessarily orthogonal) with each parametrization.
 
-The first condition of the definition implies that for each point of the parametrization, it has continuous partial derivatives of the first order, namely $\mathbf{x}_u, \mathbf{x}_v$, and the third condition ensures that these are linearly independent, and so in terms of these vectors we can define a third vector that agrees with the chosen orientation of the surface at each point $\mathbf{x}_u \wedge \mathbf{x}_v$ normalized to give $N$. This gives a natural basis/trihedron at each point $\{\mathbf{x}_u, \mathbf{x}_v, N\}$. Now, we can study the surface locally by studying how these vectors change in a small neighborhood about a point $p$, which can be done by taking the derivatives of the basis vectors with respect to the parameters and expressing them in our basis.
+The first condition of the definition implies that for each point of the parametrization, it has continuous partial derivatives of the first order, namely $\mathbf{x}_u, \mathbf{x}_v$, and the third condition ensures that these are linearly independent, and so in terms of these vectors we can define a third vector that agrees with the chosen orientation of the surface at each point $\mathbf{x}_u \wedge \mathbf{x}_v$ normalized to give $N$. This gives a natural basis/trihedron at each point {$\{\mathbf{x}_u, \mathbf{x}_v, N\}$}. Now, we can study the surface locally by studying how these vectors change in a small neighborhood about a point $p$, which can be done by taking the derivatives of the basis vectors with respect to the parameters and expressing them in our basis.
 
 In this way, we obtain the following expressions;
 
@@ -180,7 +180,7 @@ $$
 A_3\mathbf{x}_u + B_3\mathbf{x}_v + C_3N = 0
 $$
 
-Since $\{\mathbf{x}_u, \mathbf{x}_v, N\}$ is a basis, for this to be true, $ A_i = B_i = C_i = 0 | i =1,2,3 $ must hold, and these give us equations of the form;
+Since $\{\mathbf{x}_u, \mathbf{x}_v, N\}$ is a basis, for this to be true, $ A_i = B_i = C_i = 0, i =1,2,3 $ must hold, and these give us equations of the form;
 
 $$
 (\Gamma^2_{12})_u - (\Gamma^2_{11})_v + \Gamma^1_{12}\Gamma^2_{11} + \Gamma^2_{12}\Gamma^2_{12} - \Gamma^2_{11}\Gamma^2_{22} - \Gamma^1_{11}\Gamma^2_{12} = -EK
