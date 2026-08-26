@@ -236,7 +236,7 @@ $$
 ds^2 = \sum g_{ij}d\mathbf{x}^id\mathbf{x}^j = d\mathbf{x}^T[g_{ij}]d\mathbf{x}
 $$
 
-where $[g_{ij}]$ is the matrix representation of the tensor in a specific basis, and it is easy to see that, in the way in which it is defined, this matrix is symmetric and positive-definite. Similarly, we can associate a basis with each point as $\{\partial_1, ..., \partial_n, N\}$ where $N = N = \left\{N_a\right\}_{a=1}^{m-n}$ is a basis for the orthogonal complement of the space spanned by $\partial_i's$ in the ambient space. And thus, we can study the manifold by the change in the basis elements in the neighborhood of the point in terms of the basis, given as;
+where $[g_{ij}]$ is the matrix representation of the tensor in a specific basis, and it is easy to see that, in the way in which it is defined, this matrix is symmetric and positive-definite. Similarly, we can associate a basis with each point as $\{\partial_1, ..., \partial_n, N\}$ where $N = \{N_a\}_{a=1}^{m-n}$ is a basis for the orthogonal complement of the space spanned by $\partial_i's$ in the ambient space. And thus, we can study the manifold by the change in the basis elements in the neighborhood of the point in terms of the basis, given as;
 
 $$
 \partial_{ij} = \sum_{k = 1}^n \Gamma_{ij}^k\partial_k + \sum_{a=1}^{m-n}h^a_{ij}N_a 
