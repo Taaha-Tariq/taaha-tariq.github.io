@@ -15,7 +15,7 @@ Although this discovery is attributed to the 19th century and named after the Fr
 In fact, this idea of representing an arbitrary function by a series of sines and cosines was first proposed by Daniel Bernoulli while working on the solutions of the one-dimensional wave equation.
 
 $$
-\alpha \frac{\partial² y}{\partial x²} = \frac{\partial² y}{\partial t²}
+\alpha \frac{\partial^2 y}{\partial x^2} = \frac{\partial^2 y}{\partial t^2}
 $$
 
 However, at the time, Bernoulli's proposal was met with considerable skepticism, as many of the leading mathematicians of the era found it difficult to accept that the vast variety of initial configurations of a flexible string could be represented by an appropriate sum of only sines and cosines. In 1777, Euler derived the formulas for what are now known as the Fourier coefficients. Although these formulas were remarkable, he regarded them as applicable only to functions already known to admit such a trigonometric representation and did not recognize their broader significance.
@@ -28,7 +28,7 @@ Throughout we have assumed the following
 - The integral
 
 $$
-\int_a^b f²(x)\,dx
+\int_a^b f^2(x)\,dx
 $$
 
 exists and is finite.
@@ -115,7 +115,7 @@ $$
 \sin(2x),\,
 \cos(2x),\,
 \ldots
-\right\}.
+\right\}
 $$
 
 First, the functions are mutually orthogonal on the interval $[-\pi,\pi]$. Second, they are linearly independent, a fact that follows immediately from their orthogonality.
@@ -140,19 +140,19 @@ We begin by defining what mean convergence is and justifying our choice of using
 We begin by examining the problem of approximating a function $f(x)$ by a sequence of functions that we denote as $p_n$. To get an idea of how well any particular function from our sequence approximates the original function, we need a measure of error, two obvious and natural choices for the error would be 
 
 $$
-|f(x) - p_n(x)| \,\, \text{ or } \,\, (f(x)-p_n(x))²
+|f(x)-p_n(x)| \,\, \text{ or } \,\, (f(x)-p_n(x))^2
 $$
 
 Now, observe that we can consider the error for each value of the domain to determine how well the function is being approximated for that value, and if as $n$ goes to infinity, the error for each value goes to zero, we say that the sequence converges **pointwise** to the function. Although this is a good way to define convergence, it should be apparent from the definition how difficult it can be to show the convergence of any arbitrary sequence to any function. So, we proceed by defining error over the interval over which we want to examine the convergence, and once again have two choices for the error measure given as 
 
 $$
-\int_a^b|f(x) - p_n(x)|dx \,\, \text{ or } \,\, \int_a^b(f(x)-p_n(x))² dx
+\int_a^b|f(x)-p_n(x)|dx \,\, \text{ or } \,\, \int_a^b(f(x)-p_n(x))^2 dx
 $$
 
 A natural choice is to go with the second one, because the second measure is differentiable over its entire domain and is naturally induced by the inner product. So, we define our measure as
 
 $$
-E_n = \int_a^b(f(x) - p_n(x))²dx
+E_n = \int_a^b(f(x)-p_n(x))^2dx
 $$
 
 This is called the **mean square error**, which is justified by the fact that dividing by the interval width gives the mean value over the interval. And we define mean convergence as $E_n \to 0$ as $n \to \infty$. Notice how mean convergence doesn't guarantee pointwise convergence, since we may have many points with non-zero error despite having $E_n \to 0$; in fact, we can have countably infinite such points.
@@ -166,7 +166,7 @@ $$
 Using this sequence, we observe that the error measure becomes
 
 $$
-E_n = \int_a^b f²(x)dx - \int_a^b 2f(x)p_n(x)dx + \int_a^b p_n²(x)dx
+E_n = \int_a^b f^2(x)dx - \int_a^b 2f(x)p_n(x)dx + \int_a^b p_n^2(x)dx
 $$
 
 Suppose that $f(x)$ admits an expansion of the form
@@ -178,19 +178,19 @@ $$
 which gives us
 
 $$
-E_n = \int_a^b f²(x)dx - \int_a^b2(\sum_{n=1}^\infty b_n\phi_n)(\sum_{k=1}^n a_k\phi_k)dx + \int_a^b(\sum_{k=1}^n a_k\phi_k)²(x)dx
+E_n = \int_a^b f^2(x)dx - \int_a^b2(\sum_{n=1}^\infty b_n\phi_n)(\sum_{k=1}^n a_k\phi_k)dx + \int_a^b(\sum_{k=1}^n a_k\phi_k)^2(x)dx
 $$
 
 By expanding and using the orthonormality of the functions, we get
 
 $$
-E_n = \int_a^b f²(x)dx - \sum_{k=1}^n2a_kb_k + \sum_{k=1}^na_k²
+E_n = \int_a^b f^2(x)dx - \sum_{k=1}^n2a_kb_k + \sum_{k=1}^na_k^2
 $$
 
-But since $-2ab + b² = (a-b)² - a²$, we get
+But since $-2ab + b^2 = (a-b)^2 - a^2$, we get
 
 $$
-E_n = \int_a^b f²(x)dx - \sum_{k=1}^na_k² + \sum_{k=1}^n(a_k - b_k)²
+E_n = \int_a^b f^2(x)dx - \sum_{k=1}^na_k^2 + \sum_{k=1}^n(a_k - b_k)^2
 $$
 
 From this, we observe that the error is minimum when $a_k = b_k$, which proves our claim that the best coefficients are those given by our formula, as they minimize the mean square error. 
@@ -198,23 +198,23 @@ From this, we observe that the error is minimum when $a_k = b_k$, which proves o
 But, we also notice that since the error is a non-negative function
 
 $$
-\sum_{k=1}^na_k² - \sum_{k=1}^n(a_k - b_k)² \le \int_a^b f²(x)dx
+\sum_{k=1}^na_k^2 - \sum_{k=1}^n(a_k - b_k)^2 \le \int_a^b f^2(x)dx
 $$
 
 and as $n \to \infty$, the infinite sums on the left are bounded by the integral. Furthermore, if we consider $a_k = b_k$, this gives us
 
 $$
-\sum_{k=1}^\infty a_k² \le \int_a^b f²(x)dx
+\sum_{k=1}^\infty a_k^2 \le \int_a^b f^2(x)dx
 $$
 
 This is known as **Bessel's inequality**, and it shows that $a_k \to 0$ as $n \to \infty$. Also, notice if we assume that the partial sums converge to $f$ in the mean as $n$ goes to infinity, then the above inequality becomes an equality, which gives us the **Parseval's** identity
 
 $$
-\sum_{k=1}^\infty a_k² = \int_a^b f²(x)dx
+\sum_{k=1}^\infty a_k^2 = \int_a^b f^2(x)dx
 $$
 
 # Digression
-For people accustomed to vector spaces, this exposition in terms of linear algebra deals specifically with $L²(a,b)$ integrable spaces, which are Hilbert spaces, meaning they are complete inner product spaces with the inner product given as
+For people accustomed to vector spaces, this exposition in terms of linear algebra deals specifically with $L^2(a,b)$ integrable spaces, which are Hilbert spaces, meaning they are complete inner product spaces with the inner product given as
 
 $$
 \langle f, g\rangle = \int_a^b \overline{f(x)}g(x) dx
@@ -223,7 +223,7 @@ $$
 where $\overline{f(x)}$ represents complex conjugation, but since throughout we dealt with real-valued functions, the complex conjugation reduces to mere identity function. And the whole idea can be interpreted as orthogonally projecting the function $f$ onto the finite-dimensional subspace spanned by the first $n$-orthonormal basis functions given by $\{\phi_n\}$ such that the least squares error is minimized, and in this context, our error function is nothing but the square of the metric given as ($a_k=b_k$)
 
 $$
-d²(f, p_n) = ||f - p_n||² = ||f||² - \sum_{k=1}^n a_k²
+d^2(f, p_n) = ||f-p_n||^2 = ||f||^2 - \sum_{k=1}^n a_k^2
 $$
 
 where the above expression is known as the Pythagorean identity in the Hilbert space.
