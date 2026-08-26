@@ -88,12 +88,30 @@ To proceed, we can make use of our definition of a regular surface along with th
 The first condition of the definition implies that for each point of the parametrization, it has continuous partial derivatives of the first order, namely $\mathbf{x}_u, \mathbf{x}_v$, and the third condition ensures that these are linearly independent, and so in terms of these vectors we can define a third vector that agrees with the chosen orientation of the surface at each point $\mathbf{x}_u \wedge \mathbf{x}_v$ normalized to give $N$. This gives a natural basis/trihedron at each point $\{\mathbf{x}_u, \mathbf{x}_v, N\}$. Now, we can study the surface locally by studying how these vectors change in a small neighborhood about a point $p$, which can be done by taking the derivatives of the basis vectors with respect to the parameters and expressing them in our basis.
 
 In this way, we obtain the following expressions;
-$$\mathbf{x}_{uu} = \Gamma^{1}_{11}\mathbf{x}_u + \Gamma^{2}_{11}\mathbf{x}_v + eN$$
-$$\mathbf{x}_{uv} = \Gamma^{1}_{12}\mathbf{x}_u + \Gamma^{2}_{12}\mathbf{x}_v + fN$$
-$$\mathbf{x}_{vu} = \Gamma^{1}_{21}\mathbf{x}_u + \Gamma^{2}_{21}\mathbf{x}_v + fN$$
-$$\mathbf{x}_{vv} = \Gamma^{1}_{22}\mathbf{x}_u + \Gamma^{2}_{22}\mathbf{x}_v + gN$$
-$$N_u = a_{11}\mathbf{x}_u + a_{21}\mathbf{x}_v$$
-$$N_v = a_{12}\mathbf{x}_u + a_{22}\mathbf{x}_v$$
+
+$$
+\mathbf{x}_{uu} = \Gamma^{1}_{11}\mathbf{x}_u + \Gamma^{2}_{11}\mathbf{x}_v + eN
+$$
+
+$$
+\mathbf{x}_{uv} = \Gamma^{1}_{12}\mathbf{x}_u + \Gamma^{2}_{12}\mathbf{x}_v + fN
+$$
+
+$$
+\mathbf{x}_{vu} = \Gamma^{1}_{21}\mathbf{x}_u + \Gamma^{2}_{21}\mathbf{x}_v + fN
+$$
+
+$$
+\mathbf{x}_{vv} = \Gamma^{1}_{22}\mathbf{x}_u + \Gamma^{2}_{22}\mathbf{x}_v + gN
+$$
+
+$$
+N_u = a_{11}\mathbf{x}_u + a_{21}\mathbf{x}_v
+$$
+
+$$
+N_v = a_{12}\mathbf{x}_u + a_{22}\mathbf{x}_v
+$$
 
 The symbols $e, f, \text{ and } g$ are the coefficients of the second fundamental form of the surface. All we need to note here is that they are defined extrinsically to the surface, in terms of how the surface embeds in the ambient space, and as the [Gaussian curvature](https://en.wikipedia.org/wiki/Gaussian_curvature) was defined in terms of this embedding, it was by definition dependent on the extrinsic geometry. But here we prove that it is actually intrinsic to the surface. For the interested reader, they can read more about the [second fundamental form](https://en.wikipedia.org/wiki/Second_fundamental_form).
 
@@ -162,7 +180,7 @@ $$
 A_3\mathbf{x}_u + B_3\mathbf{x}_v + C_3N = 0
 $$
 
-Since $\{\mathbf{x}_u, \mathbf{x}_v, N\}$ is a basis, for this to be true, $ A_i = B_i = C_i = 0 \; | i =1,2,3$ must hold, and these give us equations of the form;
+Since $\{\mathbf{x}_u, \mathbf{x}_v, N\}$ is a basis, for this to be true, $ A_i = B_i = C_i = 0 | i =1,2,3 $ must hold, and these give us equations of the form;
 
 $$
 (\Gamma^2_{12})_u - (\Gamma^2_{11})_v + \Gamma^1_{12}\Gamma^2_{11} + \Gamma^2_{12}\Gamma^2_{12} - \Gamma^2_{11}\Gamma^2_{22} - \Gamma^1_{11}\Gamma^2_{12} = -EK
@@ -191,7 +209,7 @@ $$
 d\mathbf{x}_q(e_2) = \mathbf{x}_v
 $$
 
-Furthermore, the definition guarantees that the map must preserve linear independence, and this ensures that locally the vectors $\{\mathbf{x}_u, \mathbf{x}_v\}$ act as a basis for the plane that is tangent to the surface at the point $p$, called the tangent plane $T_p(S)$. This plane approximates the surface locally and can be used to make measurements on the surface. And as in the Euclidean plane, the inner product allows us to calculate important geometric quantities like angle, area, and length. So locally, we can carry out these calculations for a small neighborhood around a point on a surface using this tangent plane and its basis as given above, which gives us the notion of the first fundamental form. So, for a point $(a,b)$ or, appropriately, $ae_1+be_2$ in the Euclidean plane is carried to the corresponding point $a\mathbf{x}_u + b\mathbf{x_v}$ by the differential map on the tangent plane $T_q(S)$. If we are interested in the length of a curve on the surface, its velocity vector lies in the tangent plane, and its norm can therefore be computed using this inner product.
+Furthermore, the definition guarantees that the map must preserve linear independence, and this ensures that locally the vectors {$\{\mathbf{x}_u, \mathbf{x}_v\}$} act as a basis for the plane that is tangent to the surface at the point $p$, called the tangent plane $T_p(S)$. This plane approximates the surface locally and can be used to make measurements on the surface. And as in the Euclidean plane, the inner product allows us to calculate important geometric quantities like angle, area, and length. So locally, we can carry out these calculations for a small neighborhood around a point on a surface using this tangent plane and its basis as given above, which gives us the notion of the first fundamental form. So, for a point $(a,b)$ or, appropriately, $ae_1+be_2$ in the Euclidean plane is carried to the corresponding point $a\mathbf{x}_u + b\mathbf{x_v}$ by the differential map on the tangent plane $T_q(S)$. If we are interested in the length of a curve on the surface, its velocity vector lies in the tangent plane, and its norm can therefore be computed using this inner product.
 
 $$
 \langle a\mathbf{x}_u + b\mathbf{x}_v, a\mathbf{x}_u + b\mathbf{x}_v \rangle = a^2\langle\mathbf{x}_u, \mathbf{x}_u \rangle + 2ab\langle\mathbf{x}_u, \mathbf{x}_v \rangle + b^2\langle\mathbf{x}_v, \mathbf{x}_v \rangle
@@ -218,7 +236,7 @@ A = \iint_R |\mathbf{x}_u\wedge\mathbf{x}_v|dudv = \iint_R\sqrt{EG-F^2}dudv
 $$
 
 # Riemannian Metric Tensor
-In this section, we generalize some of the ideas that originated in the study of surfaces to arbitrary finite-dimensional manifolds $M$(for now, we are considering them to be embedded in ambient spaces). To begin with, we note that an n-dimensional manifold is just a generalization of a regular surface, which ensures that it can be parametrized locally using an n-dimensional open Euclidean set and is locally Euclidean, so has a definite tangent space $T_p(M)$ at all points. With these definitions, let's consider an n-dimensional manifold, parametrized locally by a coordinate neighborhood $\phi: U \subset \mathbb{R}^n \to V \cap M \subset \mathbb{R}^{m}$ having parameters $\{\mathbf{x}^1, ...,\mathbf{x}^n \}$. Note that $m > n$, a higher-dimensional Euclidean space in which the manifold sits.
+In this section, we generalize some of the ideas that originated in the study of surfaces to arbitrary finite-dimensional manifolds $M$(for now, we are considering them to be embedded in ambient spaces). To begin with, we note that an n-dimensional manifold is just a generalization of a regular surface, which ensures that it can be parametrized locally using an n-dimensional open Euclidean set and is locally Euclidean, so has a definite tangent space $T_p(M)$ at all points. With these definitions, let's consider an n-dimensional manifold, parametrized locally by a coordinate neighborhood $\phi: U \subset \mathbb{R}^n \to V \cap M \subset \mathbb{R}^{m}$ having parameters {$\{\mathbf{x}^1, ...,\mathbf{x}^n \}$}. Note that $m > n$, a higher-dimensional Euclidean space in which the manifold sits.
 
 Proceeding similarly, we can equip each tangent space with an inner
 product (it need not be inherited from an ambient space). For the
@@ -236,13 +254,13 @@ $$
 ds^2 = \sum g_{ij}d\mathbf{x}^id\mathbf{x}^j = d\mathbf{x}^T[g_{ij}]d\mathbf{x}
 $$
 
-where $[g_{ij}]$ is the matrix representation of the tensor in a specific basis, and it is easy to see that, in the way in which it is defined, this matrix is symmetric and positive-definite. Similarly, we can associate a basis with each point as $\{\partial_1, ..., \partial_n, N\}$ where $N = \{N_a\}_{a=1}^{m-n}$ is a basis for the orthogonal complement of the space spanned by $\partial_i's$ in the ambient space. And thus, we can study the manifold by the change in the basis elements in the neighborhood of the point in terms of the basis, given as;
+where $[g_{ij}]$ is the matrix representation of the tensor in a specific basis, and it is easy to see that, in the way in which it is defined, this matrix is symmetric and positive-definite. Similarly, we can associate a basis with each point as {$\{\partial_1, ..., \partial_n, N\}$} where $N = \{N_a\}_{a=1}^{m-n}$ is a basis for the orthogonal complement of the space spanned by $\partial_i's$ in the ambient space. And thus, we can study the manifold by the change in the basis elements in the neighborhood of the point in terms of the basis, given as;
 
 $$
 \partial_{ij} = \sum_{k = 1}^n \Gamma_{ij}^k\partial_k + \sum_{a=1}^{m-n}h^a_{ij}N_a 
 $$
 
-It can be seen that $\Gamma_{ij}^k = \Gamma_{ji}^k$ and $h^a_{ij} = h^a_{ji}$. Similarly, using the fact that we can swap the order of mixed third-order partial derivatives to give an explicit form of the Riemannian curvature, a natural generalization of the Gaussian curvature. But a more interesting direction is to define a covariant derivative and to give a generalized formulation of a geodesic on the n-dimensional manifold. Above, we observe that the derivative of $\partial_ i$ with respect to $j$ has components in the orthogonal complement of the basis $\{\partial_1, ..., \partial_n\}$, so if we interpret this as acceleration, then it can be thought of as having both components of acceleration tangent to the manifold and in the orthogonal complement of tangent space (normal component) $T_p(M)$. Then the normal component is related to the curvature of the manifold, but the tangential component relates to how the velocity vector $\partial_i$ bends in the tangent space $T_p(M).$ and is given by;
+It can be seen that $\Gamma_{ij}^k = \Gamma_{ji}^k$ and $h^a_{ij} = h^a_{ji}$. Similarly, using the fact that we can swap the order of mixed third-order partial derivatives to give an explicit form of the Riemannian curvature, a natural generalization of the Gaussian curvature. But a more interesting direction is to define a covariant derivative and to give a generalized formulation of a geodesic on the n-dimensional manifold. Above, we observe that the derivative of $\partial_ i$ with respect to $j$ has components in the orthogonal complement of the basis {$\{\partial_1, ..., \partial_n\}$}, so if we interpret this as acceleration, then it can be thought of as having both components of acceleration tangent to the manifold and in the orthogonal complement of tangent space (normal component) $T_p(M)$. Then the normal component is related to the curvature of the manifold, but the tangential component relates to how the velocity vector $\partial_i$ bends in the tangent space $T_p(M).$ and is given by;
 
 $$
 \nabla_{\partial_i}\partial_j = \sum_{k = 1}^n \Gamma_{ij}^k\partial_k 
