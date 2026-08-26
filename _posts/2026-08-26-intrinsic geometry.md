@@ -113,7 +113,7 @@ $$
 \Gamma^1_{11} E + \Gamma^2_{11} F &= \langle x_{uu} , x_u \rangle = \frac{1}{2} E_u \\
 \Gamma^1_{11} F + \Gamma^2_{11} G &= \langle x_{uu} , x_v \rangle = F_u - \frac{1}{2} E_v
 \end{aligned}
-\right.
+\right\}
 $$
 
 $$
@@ -122,7 +122,7 @@ $$
 \Gamma^1_{12} E + \Gamma^2_{12} F &= \langle x_{uv} , x_u\rangle = \frac{1}{2} E_v \\
 \Gamma^1_{12} F + \Gamma^2_{12} G &= \langle x_{uv} , x_v\rangle = \frac{1}{2} G_u
 \end{aligned}
-\right.
+\right\}
 $$
 
 $$
@@ -131,7 +131,7 @@ $$
 \Gamma^1_{22} E + \Gamma^2_{22} F &= \langle x_{vv} , x_u\rangle = F_v - \frac{1}{2} G_u \\
 \Gamma^1_{22} F + \Gamma^2_{22} G &= \langle x_{vv} , x_v\rangle = \frac{1}{2} G_v
 \end{aligned}
-\right.
+\right\}
 $$
 
 They are grouped such that $EG-F^2 \neq 0$, which is guaranteed by the third condition of the definition, and $E, F, \text{ and } G$ are the coefficients of the first fundamental form, a brief exposition of which is given at the end. From the expressions above, it is clear that the Christoffel symbols depend only on the first fundamental form and its derivatives, and hence on the intrinsic geometry of the surface. Now, we consider the relations;
