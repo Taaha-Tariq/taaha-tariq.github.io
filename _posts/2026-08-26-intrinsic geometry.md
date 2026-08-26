@@ -115,7 +115,13 @@ $$
 
 The symbols $e, f, \text{ and } g$ are the coefficients of the second fundamental form of the surface. All we need to note here is that they are defined extrinsically to the surface, in terms of how the surface embeds in the ambient space, and as the [Gaussian curvature](https://en.wikipedia.org/wiki/Gaussian_curvature) was defined in terms of this embedding, it was by definition dependent on the extrinsic geometry. But here we prove that it is actually intrinsic to the surface. For the interested reader, they can read more about the [second fundamental form](https://en.wikipedia.org/wiki/Second_fundamental_form).
 
-The symbols $\Gamma_{ij}^k$ are called the Christoffel symbols of the surface in terms of the parametrization. And observing that $\mathbf{x}_{uv} = \mathbf{x}_{vu}$, we note that the Christoffel symbols are symmetric in the lower indices.
+The symbols $\Gamma_{ij}^k$ are called the Christoffel symbols of the surface in terms of the parametrization. And observing that
+
+$$
+\mathbf{x}_{uv} = \mathbf{x}_{vu}
+$$
+
+, we note that the Christoffel symbols are symmetric in the lower indices.
 
 To solve for the Christoffel symbols, we take appropriate inner products of the form $\langle \mathbf{x}_{uu}, \mathbf{x}_u \rangle$ and observe the fact that
 
