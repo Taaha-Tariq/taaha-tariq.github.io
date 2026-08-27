@@ -54,7 +54,7 @@ Before stating the **fundamental theorem of Galois Theory**, let's try to formal
 
 ### Theorem: (Fundamental Theorem of Galois Theory)
 >Let $F$ be a field of characteristic $0$ or a finite field. If $E$ is the splitting field over $F$ for some polynomial in $F[x]$, then the mapping from the set of subfields of $E$ containing $F$ to the set of subgroups of $\text{Gal}(E/F)$ given by $K\to\text{Gal}(E/K)$ is a one-to-one correspondence. Furthermore, for any subfield $K$ of $E$ containing $F$,
-> 1. $[E:K] = |\text{Gal}(E/K)|$ and $[K:F]= |\text{Gal}(E/F)|/|\text{Gal}(E/K)|$. 
+> 1. $[E:K] = \|\text{Gal}(E/K)\|$ and $[K:F]= \|\text{Gal}(E/F)\|/\|\text{Gal}(E/K)\|$. 
 > 2. If $K$ is the splitting field of some polynomial in $F[x]$, then $\text{Gal}(E/K)$ is a normal subgroup of $\text{Gal}(E/F)$ and $\text{Gal}(K/F)$ is isomorphic to $\text{Gal}(E/F)/\text{Gal}(E/K)$.
 > 3. $K = E_{\text{Gal}(E/K)}$.
 > 4. If $H$ is a subgroup of Gal$(E/F)$, then $H = \text{Gal}(E/E_H)$.
@@ -82,6 +82,7 @@ Analogously, we need to define solvability for groups, which we do in the follow
 >$$
 \{\epsilon\} =H_0 \subset H_1 \subset H_2 \subset ... \subset H_k=G
 >$$
+>
 >where, for each $0 \le i < k, H_i$ is normal in $H_{i+1}$ and $H_{i+1}/H_i$ is Abelian.
 
 We see right away that every Abelian group is solvable. So, are the dihedral groups(consider the chain $\{\epsilon\} \subset H_n \subset D_n$ where $H_n$ is the subgroup of rotations). Also, the groups of order $p^n$ where $p$ is a prime (application of Sylow's theorem and Cauchy's theorem), and by the Feit-Thompson theorem, every group of odd order is solvable.
@@ -112,7 +113,7 @@ $$
 \phi(f(a)) = f(\phi(a)) = 0
 $$
 
-So, roots are invariant under all field automorphisms. So, we can think of the Galois group in terms of its action on the set of polynomial roots, and since we have a set of five roots, the Galois group must be a subgroup of $S_5$. This subgroup must also have a transposition or a 2-cycle obtained by swapping the complex roots while fixing the other three ($a+bi \to a-bi; a-bi \to a+bi$), and since $f$ is irreducible over $\mathbb{Q}$, the Galois group acts transitively on its five roots. Hence $5\mid |G|$. By Cauchy's theorem, it contains an element of order $5$, which, as an element of \(S_5\), must be a \(5\)-cycle, but the only subgroup of $S_5$ having a 2-cycle and a 5-cycle is $S_5$ itself. Therefore, $\text{Gal} \cong S_5$, but $S_5$ is not solvable as $A_5$ is a simple, finite, non-abelian subgroup of $S_5$. Thus, the polynomial is not solvable by radicals.
+So, roots are invariant under all field automorphisms. So, we can think of the Galois group in terms of its action on the set of polynomial roots, and since we have a set of five roots, the Galois group must be a subgroup of $S_5$. This subgroup must also have a transposition or a 2-cycle obtained by swapping the complex roots while fixing the other three $(a+bi \to a-bi; a-bi \to a+bi)$, and since $f$ is irreducible over $\mathbb{Q}$, the Galois group acts transitively on its five roots. Hence $5\mid |G|$. By Cauchy's theorem, it contains an element of order $5$, which, as an element of $S_5$, must be a $5$-cycle, but the only subgroup of $S_5$ having a 2-cycle and a 5-cycle is $S_5$ itself. Therefore, $\text{Gal} \cong S_5$, but $S_5$ is not solvable as $A_5$ is a simple, finite, non-abelian subgroup of $S_5$. Thus, the polynomial is not solvable by radicals.
 
 # Conclusion
 The ideas developed in this article provide a way for us to see when the roots of a polynomial over $F[x]$ can be obtained by combining the elements of the field $F$ using addition, multiplication, division, subtraction, and nth roots. These combinations may give messy expressions for the roots, but still a closed form of the roots. It should, however, be noted that this in any way does not establish that a degree n equation over a field $F$ can have fewer than n roots counting multiplicity. It only deals with whether we can find those roots using these operations or not. As for the former, we can be assured that there exists some splitting field for the polynomial over the base field, which has exactly n roots counting multiplicity.
