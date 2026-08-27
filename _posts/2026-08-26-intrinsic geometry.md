@@ -121,7 +121,7 @@ $$
 \mathbf{x}_{uv} = \mathbf{x}_{vu}
 $$
 
-, we note that the Christoffel symbols are symmetric in the lower indices.
+we note that the Christoffel symbols are symmetric in the lower indices.
 
 To solve for the Christoffel symbols, we take appropriate inner products of the form $\langle \mathbf{x}_{uu}, \mathbf{x}_u \rangle$ and observe the fact that
 
@@ -186,7 +186,7 @@ $$
 A_3\mathbf{x}_u + B_3\mathbf{x}_v + C_3N = 0
 $$
 
-Since $\{\mathbf{x}_u, \mathbf{x}_v, N\}$ is a basis, for this to be true, $ A_i = B_i = C_i = 0, i =1,2,3 $ must hold, and these give us equations of the form;
+Since {$\{\mathbf{x}_u, \mathbf{x}_v, N\}$} is a basis, for this to be true, $ A_i = B_i = C_i = 0, i =1,2,3 $ must hold, and these give us equations of the form;
 
 $$
 (\Gamma^2_{12})_u - (\Gamma^2_{11})_v + \Gamma^1_{12}\Gamma^2_{11} + \Gamma^2_{12}\Gamma^2_{12} - \Gamma^2_{11}\Gamma^2_{22} - \Gamma^1_{11}\Gamma^2_{12} = -EK
@@ -205,7 +205,7 @@ From the above two expressions, it can be seen that $K$, the Gaussian curvature,
 The importance of this result comes from the fact that the maps between surfaces that preserve the first fundamental form and hence the geometrical notions of length, arc length, and area locally also preserve the Gaussian curvature. To illustrate this, we can consider a unit sphere and a plane. Any map between the two that preserves these metrics(locally isometric) on the two surfaces must preserve the curvature. Therefore, there cannot exist a local isometry between an open subset of the plane and an open subset of the unit sphere.
 
 ## The First Fundamental Form
-To understand the notion of the first fundamental form, we have to think of the parametrization as a chart that defines a grid locally on the surface, and the vectors $\{\mathbf{x}_u, \mathbf{x}_v \}$ give the velocity along the coordinates axis of this chart. Now, observe that although we are using an open disk of the Euclidean plane as parametrization, the map may not carry the coordinate lines and vectors exactly, but the relation between the two is obvious and is given by;
+To understand the notion of the first fundamental form, we have to think of the parametrization as a chart that defines a grid locally on the surface, and the vectors {$\{\mathbf{x}_u, \mathbf{x}_v \}$} give the velocity along the coordinates axis of this chart. Now, observe that although we are using an open disk of the Euclidean plane as parametrization, the map may not carry the coordinate lines and vectors exactly, but the relation between the two is obvious and is given by;
 
 $$
 d\mathbf{x}_q(e_1) = \mathbf{x}_u
